@@ -571,7 +571,7 @@ a {
     grid-column-end: span 8;
   }
 
-  h5 {
+  .product__title {
     font-size: 30px;
     margin-bottom: 20px;
   }
@@ -586,3 +586,7 @@ a {
     margin: 2px;
   }
 } // End max-width 991px
+
+.product__intro h3 {
+  font-size: 44px;
+}
