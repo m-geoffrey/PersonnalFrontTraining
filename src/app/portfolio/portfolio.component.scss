@@ -493,6 +493,7 @@ a {
     align-self: center;
     max-width: 200px;
     margin-left: 3vw;
+    line-height: 26px;
   }
 
   .product #img {
@@ -507,88 +508,27 @@ a {
   }
 
   .product__full_info {
-    //position: absolute;
-    //grid-row-start: span 1;
-    //grid-row-end: span 1;
-    //grid-column-start: span 3;
-    //grid-column-end: span 3;
-    //align-self: center;
-    //position: relative;
-
-    //display: block;
-    //left: auto;
-    //top: auto;
-    //right: 0%;
-    //bottom: 86px;
-    //width: 340px;
-    //padding: 36px 56px;
-    //border-top: 1px solid #ebedee;
-    //border-right: 1px solid #ebedee;
-    //background-color: #fff;
-
     position: absolute;
     left: auto;
     top: auto;
     right: 0%;
-    bottom: 86px;
+    bottom: 85px;
     width: 196px;
     padding: 36px 56px;
     border-top: 1px solid #ebedee;
     border-right: 1px solid #ebedee;
     background-color: #fff;
-    z-index: 100;
-
   }
-
-  .product__button {
-    //position: absolute;
-    //grid-row-start: 1;
-    //grid-row-end: 2;
-    //grid-column-start: 7;
-    //grid-column-end: 14;
-    //position: absolute;
-    //left: auto;
-    //top: auto;
-    //right: 0%;
-    //bottom: 0%;
-    //width: 582px;
-  //display: flex;
-  //  grid-row-start: 1;
-  //  -ms-grid-row-span: 1;
-  //  grid-row-end: 2;
-  //  -ms-grid-column: 7;
-  //  grid-column-start: 7;
-  //  -ms-grid-column-span: 6;
-  //  grid-column-end: 12;
-  //  position: absolute;
-  //  left: auto;
-  //  top: auto;
-  //  right: 0%;
-  //  bottom: 0%;
-  //  width: 500px;
-  }
-
-  //.product__button a {
-  //  //padding-right: 250px;
-  //  position: relative;
-  //  right: 0%;
-  //  text-transform: uppercase;
-  //  grid-row-start: 9;
-  //  grid-column-end: 12;
-  //  background-color: rgba(172, 81, 81, 0.67);
-  //  //border-right: rgba(172, 81, 81, 0.67);
-  //  padding: 30px 36px;
-  //  width: 100%;
-  //}
 
   .product__button a {
     position: absolute;
     right: 0;
     top: auto;
     text-transform: uppercase;
-    bottom: 0px;
+    bottom: 0;
     padding: 33px 36px;
-    background-color: rgba(172, 81, 81, 0.67);
+    background-color: #a17a63;
     width: 40%;
+    color: white;
   }
 }

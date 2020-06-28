@@ -53,12 +53,13 @@
 </div>
 
 
-<div class="product">
+<div class="product" *ngFor="let product of products">
 <!--  <div class="product__button">-->
 <!--    <a>Discover Products</a>-->
 <!--  </div>-->
   <div class="product__intro">
-    <h3>Haola Bola</h3>
+<!--    <h3>Haola Bola</h3>-->
+    <h3>{{product}}</h3>
     <p>
       Taking its inspiration from pendant jewelry, Bola Halo is a uniquely expressive pendant light featuring a chromated
       ring that balances delicately over its elegant opal glass shade while allowing its surroundings to shine through.
