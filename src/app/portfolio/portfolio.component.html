@@ -1,0 +1,91 @@
+<div style="margin-top: 5vh"></div>
+
+<h2 style="margin-bottom: 3px">Some Navbar Practice</h2>
+
+<div class="nav">
+  <div class="brand" id="brand">
+    <a>
+      Prospero UI Kit
+    </a>
+  <div class="divider" *ngIf="!hamburger"></div>
+  </div>
+  <div class="dropdownsMenu" *ngIf="!hamburger || navMenu">
+    <div>
+      <a routerLink="/about">Sections</a>
+    </div>
+    <div>
+      <a routerLink="/about">Layouts</a>
+    </div>
+    <div>
+      <a routerLink="/about">Templates</a>
+    </div>
+    <div>
+      <a routerLink="/portfolio">Others</a>
+    </div>
+  </div>
+  <div class="btn">
+    <button type="button">Get the kit</button>
+  </div>
+<!--  <p [ngClass]="condition ? 'checked' : 'unchecked'">-->
+
+  <div class="hamburger"
+       *ngIf="hamburger"
+       (click)="toggleNavLinks()"
+      [ngClass]="{'change': navMenu}">
+<!--    <button (click)="toggleNavLinks()">O</button>-->
+<!--    <button (click)="toggleNavLinks()">-->
+<!--      <img src="../../assets/images/icons/menu.svg" alt="hamburger_icon">-->
+<!--    </button>-->
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+</div>
+
+<div class="hero">
+  <div>
+    <h2>Hero</h2>
+    <p>
+      Pick and choose from 7 different hero layouts below. Read through our guide for guidance on how to build your site
+      using the kit.
+    </p>
+  </div>
+</div>
+
+
+<div class="product">
+<!--  <div class="product__button">-->
+<!--    <a>Discover Products</a>-->
+<!--  </div>-->
+  <div class="product__intro">
+    <h3>Haola Bola</h3>
+    <p>
+      Taking its inspiration from pendant jewelry, Bola Halo is a uniquely expressive pendant light featuring a chromated
+      ring that balances delicately over its elegant opal glass shade while allowing its surroundings to shine through.
+    </p>
+  </div>
+<!--  <img src="../../assets/images/ring-4279987_1920.jpg" alt="image.title">-->
+  <div id="img"></div>
+  <div class="product__full_info">
+    <h5 class="product__title">
+      Haola Bola's ring
+    </h5>
+    <p class="product__description">
+      Halo Family
+    </p>
+    <p class="product__price">
+      $329
+    </p>
+    <div class="product__button">
+      <a>Discover Products</a>
+    </div>
+  </div>
+</div>
+
+
+<br style="margin-top: 85vh;">
+<div style="margin-top: 85vh; font-size: 9px; display: block;">
+Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+  <p>Image par <a href="https://pixabay.com/fr/users/dtjelit-12798997/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4279987">
+    dtjelit</a> de <a href="https://pixabay.com/fr/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4279987">Pixabay</a></p>
+</div>

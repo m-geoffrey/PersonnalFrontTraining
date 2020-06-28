@@ -1,0 +1,85 @@
+<!--<div class="nav">-->
+<!--  <div class="brand">-->
+<!--    <h2>-->
+<!--      Brand-->
+<!--    </h2>-->
+<!--  </div>-->
+
+<!--&lt;!&ndash;   [ngClass]="{'navDisplay': navMenuDisplayed}" /  <div [ngStyle]="{'background-color':'green'}"></<div>-->
+<!-- &ndash;&gt;-->
+<!--  <ul class="test">-->
+<!--    <div *ngIf="isMenuCollapsed">-->
+<!--      <li>-->
+<!--        <a routerLink="/home" routerLinkActive="active">Home</a>-->
+<!--        <a routerLink="/about" routerLinkActive="active">About</a>-->
+<!--        <a href="">link 3</a>-->
+<!--      </li>-->
+<!--    </div>-->
+<!--  </ul>-->
+<!--&lt;!&ndash;    &ndash;&gt;-->
+
+<!--    <div *ngIf="menuToggle" class="navDisplay">-->
+<!--      <ul>-->
+<!--      <li>-->
+<!--        <a routerLink="/home" routerLinkActive="active">Home</a>-->
+<!--        <a routerLink="/about" routerLinkActive="active">About</a>-->
+<!--        <a href="">link 3</a>-->
+<!--      </li></ul>-->
+<!--    </div>-->
+
+
+<!--&lt;!&ndash;    &ndash;&gt;-->
+
+<!--&lt;!&ndash;*ngIf="innerWidth < 991"  *ngIf="!isMenuCollapsed"-->
+<!--     [hidden]="isMenuCollapsed" (click)="toggle()"-->
+<!--&ndash;&gt;-->
+<!--  <div>-->
+<!--    <div id="menuToggle" (click)="toggleMenu()">-->
+<!--      <div id="bar1"></div>-->
+<!--      <div id="bar2"></div>-->
+<!--      <div id="bar3"></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--&lt;!&ndash;    <div id="menuToggle" (click)="alert()">&ndash;&gt;-->
+<!--&lt;!&ndash;      menu&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--  -->
+<!--</div>-->
+
+<!-- START NEW BAR LOL -->
+<div class="nav">
+
+    <div class="brand">
+      <a href="">Brand</a>
+    </div>
+    <div class="list">
+      <ul>
+        <li>
+          <a routerLink="/home" routerLinkActive="active">Home</a>
+          <a routerLink="/about" routerLinkActive="active">About</a>
+          <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+        </li>
+      </ul>
+    </div>
+
+  <div class="menu" *ngIf="menuDisplay">
+    <ul>
+      <li (click)="hideMenu()">
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/about" routerLinkActive="active">About</a>
+        <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+      </li>
+    </ul>
+  </div>
+
+
+<!--    hamburger    -->
+    <div class="hamburger" (click)="toggleMenu()">
+      <div id="bar1"></div>
+      <div id="bar2"></div>
+      <div id="bar3"></div>
+    </div>
+<!--  end hamburger  -->
+
+
+</div>

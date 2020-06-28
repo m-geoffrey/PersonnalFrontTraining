@@ -1,0 +1,328 @@
+* {
+  font-family: 'Monserrat-Light';
+  font-size: 13px;
+}
+
+@font-face {
+  font-family: 'Monserrat-Light';
+  src: url("../../assets/fonts/Montserrat-Light.ttf") format("opentype");
+}
+
+
+header {
+  //border: 1px solid red;
+  display: flex;
+  width: 70vw;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+header .presentationText {
+  //border: 1px solid green;
+  width: 40%;
+  margin-bottom: 2vh;
+}
+
+header .presentationImage {
+  position: relative;
+  width: 60%;
+  //border: 1px solid green;
+  margin: auto;
+}
+
+@media all and (max-width: 900px) {
+  header {
+    display: block;
+  }
+  header .presentationText {
+    //border: 1px solid green;
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  header .presentationImage {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin: auto;
+  }
+}
+
+.presentationImage img {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  margin: auto;
+}
+
+.skills {
+  //border: 1px solid black;
+  display: flex;
+  width: 70vw;
+  margin: 3vh auto;
+}
+
+.skills .container {
+  //border: 1px solid purple;
+  display: block;
+  width: 45%;
+  margin-left: 0;
+  margin-right: 5%;
+}
+
+.skills .container h3 {
+  //border: 1px solid red;
+  position: relative;
+  width: 50%;
+}
+
+.skills .container p {
+   //border: 1px solid green;
+  position: relative;
+  display: flex;
+  text-align: justify;
+}
+
+
+.skillItems {
+  //border: 1px solid red;
+  border: 1px dashed red;
+  width: 45%;
+  margin-left: 5vw;
+  text-align: center;
+}
+
+.skillItems p {
+  font-weight: bold;
+}
+
+.skillItems img {
+  max-height: 20%;
+  max-width: 20%;
+  display: block;
+}
+
+@media all and (max-width: 900px) {
+  .skills {
+    //border: 1px solid black;
+    min-width: 70vw;
+    position: relative;
+    display: block;
+  }
+  .skills .container {
+    position: relative;
+    min-width:100%;
+  }
+
+  .skills .container p {
+    //border: 1px solid blue;
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+  }
+
+  .skillItems {
+    //border: 1px solid red;
+    margin: auto;
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+
+/*
+    start contact form
+*/
+
+.container__contact {
+  width: 85vw;
+  margin: auto;
+  font-size: 13px;
+  display: block;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.1390931372549019) 93%, rgba(0,0,0,0.17550770308123254) 100%);
+}
+
+.container__contact .intro__contact h3 {
+  font-size: 30px;
+  margin: 5vh 0 0 9%;
+  padding-top: 7vh;
+  padding-bottom: 2vh;
+  max-width: 80%;
+  //width: 50%;
+  //display: flex;
+}
+
+.container__contact .intro__contact p {
+  font-size: 16px;
+  margin: 2vh 0 0 9%;
+  max-width: 80%;
+}
+
+.container__contact form {
+  width: 70vw;
+  margin: auto;
+}
+
+.header__form {
+  //border: 1px solid red;
+  width: 80%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  //margin: auto;
+  //display: flex;
+  //justify-content: center;
+}
+
+.header__form .row {
+  //border: 1px solid green;
+  min-width: 45%;
+  //margin: auto;
+}
+
+.col__label {
+  padding-bottom: 2vh;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 80%;
+}
+
+.header__form .row .col__input input{
+  //border: 1px solid blue;
+  width: 80%;
+}
+
+.header__form .div2 .row .col__input input {
+  //border: 1px solid red;
+  width: 96%;
+}
+
+.row3 {
+  width: 80%;
+  //border: 1px solid red;
+  padding-bottom: 2vh;
+}
+
+.row3 .col__input textarea{
+  width: 99%;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.btn__submit {
+  margin-bottom: 8vh;
+  margin-top: 2vh;
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.div1 {
+  //border: 1px solid red;
+  margin: 0 auto auto 0;
+  width: 55%;
+  padding-top: 3vh;
+}
+
+.div2 {
+  margin: 0 auto auto 0;
+  width: 45%;
+  padding-top: 3vh;
+}
+
+.header__form {
+  justify-content: flex-end;
+}
+
+@media all and (max-width: 767px) {
+  .container__contact {
+    //border: 1px dashed black;
+    width: 80vw;
+    //margin: auto;
+    //display: block;
+  }
+
+  .container__contact .intro__contact h3 {
+    text-align: center;
+  }
+
+  .container__contact .intro__contact p {
+    text-align: center;
+  }
+
+  .header__form {
+    //border: 1px dashed purple;
+    width: 70vw;
+    //display: block;
+  }
+
+  .div1 {
+    //border: 1px solid red;
+    width: 98%;
+    margin-left: 5%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .div2 {
+    width: 98%;
+    margin-left: 5%;
+  }
+
+  .container__contact  form .header__form .row .col__label {
+    //border: 1px solid red;
+  }
+
+  .container__contact  form .header__form .row input {
+    //border: 1px dashed red;
+    display: block;
+    width: 90% !important;
+    //margin: auto !important;
+    //box-sizing: content-box !important;
+  }
+
+
+    .container__contact form .row .col__input {
+    //border: 3px solid red;
+    //display: flex;
+    width: 100%;
+  }
+
+  .row3 {
+    //border: 1px dashed purple;
+    width: 100%;
+    margin-left: 5%;
+  }
+
+  .row3 textarea {
+    //display: flex;
+    width: 91% !important;
+    resize: none;
+    padding-bottom: 2vh;
+  }
+
+
+
+} //end @media max-width 767px
+
+@media all and (min-width: 768px) {
+  .header__form {
+    display: flex;
+  }
+}
+// end contact form
+
+
+//* { border: 1px solid darkred; }
+
+
+
+
+

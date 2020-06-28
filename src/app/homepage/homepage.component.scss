@@ -1,0 +1,119 @@
+//@font-face {
+//  font-family: 'Monserrat-Light';
+//  src: url("../../assets/fonts/Montserrat-Light.ttf") format("opentype");
+//}
+
+* {
+  font-family: 'Monserrat-Light';
+  font-size: 13px;
+}
+
+.introduction {
+  //border: 1px dashed purple;
+  display: flex;
+  width: 80vw;
+  margin: 10vh auto;
+}
+
+.intro__text {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.intro__text .title {
+  //border: 1px solid red;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 2vh;
+}
+
+.intro__text .presentation {
+  //border: 1px solid blue;
+  width:100%;
+  margin: auto;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+@media all and (max-width: 767px) {
+  .introduction {
+    width: 90vw;
+  }
+
+  .intro__text {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+.experience {
+  //border: 1px dashed blue;
+  display: flex;
+  width: 80vw;
+  margin: 5vh auto;
+  padding-bottom: 5vh;
+}
+
+.intro__exp {
+  //border: 1px dashed red;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.intro__exp .title {
+  font-size: 36px;
+}
+
+.intro__exp .presentation {
+  //border: 1px solid red;
+  margin: auto;
+  font-size: 16px;
+}
+
+@media all and (max-width: 767px) {
+  .experience {
+    width: 90vw;
+    text-align: center;
+  }
+}
+
+.hobbies {
+  //border: 1px solid red;
+  width: 80vw;
+  display: flex;
+  margin: auto;
+}
+
+.hobbies .paint {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.paint h3 {
+  font-size: 28px;
+}
+
+.paint p {
+  font-size: 16px;
+}
+
+.paint img {
+  max-width: 80%;
+  filter: grayscale(50%);
+  transition: all 0.5s ease-out;
+}
+
+.paint img:hover {
+  filter: grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+@media all and (max-width: 767px) {
+  .hobbies {
+    width: 90vw;
+    text-align: center;
+  }
+}

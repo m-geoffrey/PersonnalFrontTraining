@@ -1,0 +1,448 @@
+.divider {
+  border-right: 1px solid black;
+  height: 100%;
+}
+
+.nav {
+  //border: 1px solid red;
+  display: flex;
+  width: 100%;
+  min-height: 5vh;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  justify-content: flex-end;
+}
+
+.brand, .divider, .dropdownsMenu {
+  //border: 1px solid red;
+  display: flex;
+  position: relative;
+  align-items: center; // centre verticalement
+}
+
+.brand {
+  display: flex;
+  min-width: 15vw;
+  //margin-left: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.divider {
+  margin-left: 35px;
+  height: 50%
+}
+
+.dropdownsMenu {
+  width: 100vw;
+  //border: 1px solid red;
+  display: flex;
+}
+
+.dropdownsMenu div {
+  //min-width: 100%;
+  //border: 1px solid red;
+}
+
+.dropdownsMenu div a {
+  //border: 1px solid green;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.btn {
+  //border: 1px solid red;
+  display: block;
+  min-width: 176px;
+  margin-left: 0;
+}
+
+.btn button {
+  //display: flex;
+  height: 100%;
+  width: 100%;
+  //text-align: center;
+  //vertical-align: middle;
+  align-items: center;
+}
+
+// 991 collapse
+@media all and (max-width: 991px) {
+  .nav  {
+    //border: 1px solid black;
+    width: 100%;
+  }
+
+  .brand {
+    min-width: 150px;
+    //border: 1px solid red;
+    //display: flex;
+    left: 0;
+  }
+
+  .btn {
+    display: block;
+    margin-left: auto;
+    min-width: 176px;
+  }
+
+  .hamburger {
+    //border: 1px solid red;
+    display: block;
+    width: 50px;
+    height: auto;
+  }
+
+  .dropdownsMenu {
+    //border: 1px solid green;
+    position: absolute;
+    display: block;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 8px;
+    height: auto; //todo check this later
+    width: 100%;
+    background-color: white;
+    //border-bottom: 1px solid gray;
+    //left: 0;
+  }
+
+  .dropdownsMenu div {
+    //border: 1px solid red;
+    display: flex;
+    width: 100%;
+    //border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdownsMenu div:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdownsMenu div a {
+    //display: flex;
+    height: 7vh;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width: 991px) and (max-width: 1199px) {
+  .brand {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+* {
+  font-family: 'Monserrat-Light';
+  //text-transform: uppercase;
+}
+
+.hamburger {
+  //border: 1px solid gray;
+  display: block;
+  margin-right: 2vw;
+}
+.bar1, .bar2, .bar3 {
+  display: flex;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+a {
+  color: black;
+  text-decoration-line: none;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  min-width: 176px;
+}
+
+@media all and (max-width: 482px) {
+  .btn {
+    display: none;
+  }
+
+  #brand {
+    display: flex;
+    left: 0;
+    margin-right: auto;
+  }
+}
+
+// START HERO BANNER
+.hero {
+  background-color: rgba(245, 234, 234, 0.7);
+  height: 25vh;
+  display: block;
+  align-items: center;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 10vh;
+}
+
+.hero h2  {
+  //border: 1px solid red;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  font-size: 80px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.hero p {
+  //border: 1px solid red;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+@media all and (max-width: 767px) {
+  .hero {
+    //border: 1px solid red;
+    display: flex;
+  }
+
+  .hero h2 {
+    display: block;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .hero p {
+    display: block;
+    text-align: center;
+    width: 80%;
+  }
+} // end max-width: 767px
+// END HERO
+
+
+
+// START PRODUCT
+.product {
+  //border: 1px dashed black;
+  height: 100vh;
+  //min-height: auto;
+  //width: 90%;
+  //margin: auto auto 8vh;
+  display: block;
+  //margin-bottom: 8vh;
+  //position: relative;
+  z-index: 1;
+}
+
+.product .product__button {
+  display: flex;
+  text-transform: uppercase;
+  background-color: rgba(172, 81, 81, 0.67);
+  padding: 30px 36px;
+}
+
+.product .product__button a {
+  color: white;
+}
+
+.product #img {
+  //border: 1px solid red;
+  display: inline-block;
+  position: relative;
+  background-image: url("../../assets/images/ring-4279987_1920.jpg");
+  height: 30vh;
+  min-width: 100%;
+  //max-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding-top: 0;
+}
+
+@media all and (max-width: 991px) {
+
+  .product {
+    //border: 1px solid red;
+    margin-top: 7vh;
+    padding: 12px;
+  }
+
+  .product h3 {
+    //border: 1px solid red;
+    text-transform: none;
+  }
+
+  .product p {
+    //border: 1px solid red;
+    text-align: left;
+    padding-right: 36px;
+  }
+
+  .product #img {
+    //border: 1px solid green;
+    //border: 1px solid red;
+    //display: inline-block;
+    position: relative;
+    //background-image: url("../../assets/images/ring-4279987_1920.jpg");
+    //height: 30vh;
+    max-width: 60%;
+    //max-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-top: 0;
+  }
+
+  .product .product__title {
+    //border: 1px solid blue;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: none;
+    margin: 3vh auto;
+  }
+
+  .product .product__description {
+    //border: 1px solid blue;
+    text-align: left;
+    text-transform: none;
+  }
+
+  .product .product__price {
+    font-size: 30px;
+  }
+
+  .product .product__button {
+    text-transform: uppercase;
+    background-color: rgba(172, 81, 81, 0.67);
+    border-right: rgba(172, 81, 81, 0.67);
+    padding: 30px 36px;
+  }
+
+  .product .product__button a {
+    color: white;
+  }
+
+} // End max-width 991px
+
+@media all and (min-width: 992px) {
+  .product {
+    //border: 1px solid red;
+    margin-top: 7vh;
+    padding: 12px;
+    display: flex;
+    //width: 100%;
+    height: 80vh;
+    align-items: flex-end;
+
+  }
+
+  .product .product__intro {
+    align-items: center;
+    display: block;
+    height: 60%;
+    width: 25%;
+    margin: auto;
+
+  }
+
+  .product h3 {
+    //border: 1px solid blue;
+    text-transform: none;
+    display: inline-block;
+    height: auto;
+  }
+
+  .product p {
+    //border: 1px solid red;
+    text-align: left;
+    padding-right: 36px;
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .product #img {
+    //border: 1px solid green;
+    display: block;
+    //position: relative;
+    min-width: 50%;
+    //max-width: 50%;
+    min-height: 100%;
+    background-size: cover;
+    //box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .product .product__full_info {
+    //border: 1px dashed red;
+    display: block;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    top: 0;
+    width: 25%;
+    margin-top: 30%;
+    //overflow: hidden;
+    max-height: 300px;
+    z-index: 1;
+    //position: absolute;
+  }
+
+  .product .product__title {
+    //border: 1px solid blue;
+    //display: inline-block;
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: none;
+    margin: 3vh auto;
+  }
+
+  .product .product__description {
+    //border: 1px solid blue;
+    //display: inline-block;
+    display: flex;
+    text-align: left;
+    text-transform: none;
+  }
+
+  .product .product__price {
+    //display: inline-block;
+    display: flex;
+    font-size: 30px;
+  }
+
+  .product .product__button {
+    position: relative;
+    left: auto;
+    width: auto;
+    margin-left: -25vw;
+    z-index: 20;
+    padding-right: 0;
+    //border-right: rgba(172, 81, 81, 0.67);
+  }
+} // End min-width 992px
