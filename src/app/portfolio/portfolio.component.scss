@@ -451,16 +451,6 @@ a {
 @media all and (min-width: 992px){
 
   .product {
-    //margin-top: 5vh;
-    //display: grid;
-    //grid-template-columns: repeat(12, 1fr);
-    ////grid-gap: 1rem;
-    //grid-template-rows: auto;
-    //margin-right: auto;
-    //margin-left: auto;
-    //grid-column-gap: 36px;
-    //grid-row-gap: 30px;
-    //grid-template-rows: auto;
     position: relative;
     display: -ms-grid;
     display: grid;
@@ -474,16 +464,10 @@ a {
     grid-column-gap: 36px;
     grid-row-gap: 30px;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: auto;
     grid-template-rows: auto;
   }
-
-  //.product {
-  //  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  //  -ms-grid-rows: auto;
-  //  grid-template-rows: auto;
-  //}
 
   .product__intro {
     grid-row-start: span 1;
@@ -497,9 +481,8 @@ a {
   }
 
   .product #img {
-    background: url("../../assets/images/ring-4279987_1920.jpg");
+    background: url("../../assets/images/ring-4279987_1920.jpg") 50% 50%;
     background-size: cover;
-    background-position: 50% 50%;
     min-height: 850px;
     grid-row-start: span 1;
     grid-row-end: span 1;
@@ -511,7 +494,7 @@ a {
     position: absolute;
     left: auto;
     top: auto;
-    right: 0%;
+    right: 0;
     bottom: 85px;
     width: 196px;
     padding: 36px 56px;
@@ -521,14 +504,85 @@ a {
   }
 
   .product__button a {
+    color: white;
+    background-color: #a17a63;
+    text-transform: uppercase;
+    padding: 33px 36px;
+    width: 40%;
     position: absolute;
     right: 0;
-    top: auto;
-    text-transform: uppercase;
     bottom: 0;
-    padding: 33px 36px;
-    background-color: #a17a63;
-    width: 40%;
-    color: white;
   }
-}
+} // End min-width: 992px
+
+
+@media all and (max-width: 991px) {
+  .product {
+    //border: 1px solid red;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 36px;
+    grid-column-start: 1;
+    grid-column-end: span 8;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .product .product__intro {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: span 8;
+  }
+
+  .product #img {
+    //border: 1px solid red;
+    background: url("../../assets/images/ring-4279987_1920.jpg") 50% 50%  no-repeat;
+    background-size: cover;
+    display: block;
+    height: 50vh;
+    grid-column-start: 1;
+    grid-column-end: span 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .product .product__full_info {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: span 8;
+  }
+
+  .product .product__button {
+    grid-column-start: 1;
+    grid-column-end: span 8;
+  }
+  .product .product__button a {
+    display: block;
+    color: white;
+    background-color: #a17a63;
+    text-transform: uppercase;
+    padding: 33px 36px;
+    //width: 100%;
+    //position: absolute;
+    //right: 0;
+    //bottom: 0;
+    grid-column-start: 1;
+    grid-column-end: span 8;
+  }
+
+  h5 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  p.product__description {
+    font-size: 16px;
+    margin: 2px;
+  }
+
+  p.product__price {
+    font-size: 30px;
+    margin: 2px;
+  }
+} // End max-width 991px
