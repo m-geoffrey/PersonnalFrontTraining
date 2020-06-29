@@ -247,202 +247,346 @@ a {
 
 
 
-// START PRODUCT
-.product {
-  //border: 1px dashed black;
-  height: 100vh;
-  //min-height: auto;
-  //width: 90%;
-  //margin: auto auto 8vh;
-  display: block;
-  //margin-bottom: 8vh;
-  //position: relative;
-  z-index: 1;
-}
+//// START PRODUCT
+//.product {
+//  //border: 1px dashed black;
+//  height: 100vh;
+//  //min-height: auto;
+//  //width: 90%;
+//  //margin: auto auto 8vh;
+//  display: block;
+//  //margin-bottom: 8vh;
+//  //position: relative;
+//  z-index: 1;
+//}
+//
+//.product .product__button {
+//  display: flex;
+//  text-transform: uppercase;
+//  background-color: rgba(172, 81, 81, 0.67);
+//  padding: 30px 36px;
+//}
+//
+//.product .product__button a {
+//  color: white;
+//}
+//
+//.product #img {
+//  //border: 1px solid red;
+//  display: inline-block;
+//  position: relative;
+//  background-image: url("../../assets/images/ring-4279987_1920.jpg");
+//  height: 30vh;
+//  min-width: 100%;
+//  //max-height: 500px;
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//  background-position: 50% 50%;
+//  padding-top: 0;
+//}
+//
+//@media all and (max-width: 991px) {
+//
+//  .product {
+//    //border: 1px solid red;
+//    margin-top: 7vh;
+//    padding: 12px;
+//  }
+//
+//  .product h3 {
+//    //border: 1px solid red;
+//    text-transform: none;
+//  }
+//
+//  .product p {
+//    //border: 1px solid red;
+//    text-align: left;
+//    padding-right: 36px;
+//  }
+//
+//  .product #img {
+//    //border: 1px solid green;
+//    //border: 1px solid red;
+//    //display: inline-block;
+//    position: relative;
+//    //background-image: url("../../assets/images/ring-4279987_1920.jpg");
+//    //height: 30vh;
+//    max-width: 60%;
+//    //max-height: 500px;
+//    background-size: cover;
+//    background-repeat: no-repeat;
+//    background-position: 50% 50%;
+//    padding-top: 0;
+//  }
+//
+//  .product .product__title {
+//    //border: 1px solid blue;
+//    font-size: 30px;
+//    font-weight: normal;
+//    text-transform: none;
+//    margin: 3vh auto;
+//  }
+//
+//  .product .product__description {
+//    //border: 1px solid blue;
+//    text-align: left;
+//    text-transform: none;
+//  }
+//
+//  .product .product__price {
+//    font-size: 30px;
+//  }
+//
+//  .product .product__button {
+//    text-transform: uppercase;
+//    background-color: rgba(172, 81, 81, 0.67);
+//    border-right: rgba(172, 81, 81, 0.67);
+//    padding: 30px 36px;
+//  }
+//
+//  .product .product__button a {
+//    color: white;
+//  }
+//
+//} // End max-width 991px
+//
+//@media all and (min-width: 992px) {
+//  .product {
+//    //border: 1px solid red;
+//    margin-top: 7vh;
+//    padding: 12px;
+//    display: flex;
+//    //width: 100%;
+//    height: 80vh;
+//    align-items: flex-end;
+//
+//  }
+//
+//  .product .product__intro {
+//    align-items: center;
+//    display: block;
+//    height: 60%;
+//    width: 25%;
+//    margin: auto;
+//
+//  }
+//
+//  .product h3 {
+//    //border: 1px solid blue;
+//    text-transform: none;
+//    display: inline-block;
+//    height: auto;
+//  }
+//
+//  .product p {
+//    //border: 1px solid red;
+//    text-align: left;
+//    padding-right: 36px;
+//    display: inline-block;
+//    margin-left: auto;
+//  }
+//
+//  .product #img {
+//    //border: 1px solid green;
+//    display: block;
+//    //position: relative;
+//    min-width: 50%;
+//    //max-width: 50%;
+//    min-height: 100%;
+//    background-size: cover;
+//    //box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+//  }
+//
+//  .product .product__full_info {
+//    //border: 1px dashed red;
+//    display: block;
+//    border-top: 1px solid gray;
+//    border-right: 1px solid gray;
+//    top: 0;
+//    width: 25%;
+//    margin-top: 30%;
+//    //overflow: hidden;
+//    max-height: 300px;
+//    z-index: 1;
+//    //position: absolute;
+//  }
+//
+//  .product .product__title {
+//    //border: 1px solid blue;
+//    //display: inline-block;
+//    display: flex;
+//    width: 100%;
+//    font-size: 30px;
+//    font-weight: normal;
+//    text-transform: none;
+//    margin: 3vh auto;
+//  }
+//
+//  .product .product__description {
+//    //border: 1px solid blue;
+//    //display: inline-block;
+//    display: flex;
+//    text-align: left;
+//    text-transform: none;
+//  }
+//
+//  .product .product__price {
+//    //display: inline-block;
+//    display: flex;
+//    font-size: 30px;
+//  }
+//
+//  .product .product__button {
+//    position: relative;
+//    left: auto;
+//    width: auto;
+//    margin-left: -25vw;
+//    z-index: 20;
+//    padding-right: 0;
+//    //border-right: rgba(172, 81, 81, 0.67);
+//  }
+//} // End min-width 992px
 
-.product .product__button {
-  display: flex;
-  text-transform: uppercase;
-  background-color: rgba(172, 81, 81, 0.67);
-  padding: 30px 36px;
-}
-
-.product .product__button a {
-  color: white;
-}
-
-.product #img {
-  //border: 1px solid red;
-  display: inline-block;
-  position: relative;
-  background-image: url("../../assets/images/ring-4279987_1920.jpg");
-  height: 30vh;
-  min-width: 100%;
-  //max-height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  padding-top: 0;
-}
-
-@media all and (max-width: 991px) {
+// START BRANCH FRONT FOR PRODUCT grid test css
+@media all and (min-width: 992px){
 
   .product {
-    //border: 1px solid red;
-    margin-top: 7vh;
-    padding: 12px;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5vh;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 36px;
+    grid-row-gap: 30px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
   }
 
-  .product h3 {
-    //border: 1px solid red;
-    text-transform: none;
-  }
-
-  .product p {
-    //border: 1px solid red;
-    text-align: left;
-    padding-right: 36px;
+  .product__intro {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 3;
+    grid-column-end: span 3;
+    align-self: center;
+    max-width: 200px;
+    margin-left: 3vw;
+    line-height: 26px;
   }
 
   .product #img {
-    //border: 1px solid green;
-    //border: 1px solid red;
-    //display: inline-block;
-    position: relative;
-    //background-image: url("../../assets/images/ring-4279987_1920.jpg");
-    //height: 30vh;
-    max-width: 60%;
-    //max-height: 500px;
+    background: url("../../assets/images/ring-4279987_1920.jpg") 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding-top: 0;
+    min-height: 850px;
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 6;
+    grid-column-end: span 6;
   }
 
-  .product .product__title {
-    //border: 1px solid blue;
-    font-size: 30px;
-    font-weight: normal;
-    text-transform: none;
-    margin: 3vh auto;
+  .product__full_info {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 85px;
+    width: 196px;
+    padding: 36px 56px;
+    border-top: 1px solid #ebedee;
+    border-right: 1px solid #ebedee;
+    background-color: #fff;
   }
 
-  .product .product__description {
-    //border: 1px solid blue;
-    text-align: left;
-    text-transform: none;
-  }
-
-  .product .product__price {
-    font-size: 30px;
-  }
-
-  .product .product__button {
-    text-transform: uppercase;
-    background-color: rgba(172, 81, 81, 0.67);
-    border-right: rgba(172, 81, 81, 0.67);
-    padding: 30px 36px;
-  }
-
-  .product .product__button a {
+  .product__button a {
     color: white;
+    background-color: #a17a63;
+    text-transform: uppercase;
+    padding: 33px 36px;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
+} // End min-width: 992px
 
-} // End max-width 991px
 
-@media all and (min-width: 992px) {
+@media all and (max-width: 991px) {
   .product {
     //border: 1px solid red;
-    margin-top: 7vh;
-    padding: 12px;
-    display: flex;
-    //width: 100%;
-    height: 80vh;
-    align-items: flex-end;
-
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 36px;
+    grid-column-start: 1;
+    grid-column-end: span 8;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
   }
 
   .product .product__intro {
-    align-items: center;
     display: block;
-    height: 60%;
-    width: 25%;
-    margin: auto;
-
-  }
-
-  .product h3 {
-    //border: 1px solid blue;
-    text-transform: none;
-    display: inline-block;
-    height: auto;
-  }
-
-  .product p {
-    //border: 1px solid red;
-    text-align: left;
-    padding-right: 36px;
-    display: inline-block;
-    margin-left: auto;
+    grid-column-start: 1;
+    grid-column-end: span 8;
   }
 
   .product #img {
-    //border: 1px solid green;
-    display: block;
-    //position: relative;
-    min-width: 50%;
-    //max-width: 50%;
-    min-height: 100%;
+    //border: 1px solid red;
+    background: url("../../assets/images/ring-4279987_1920.jpg") 50% 50%  no-repeat;
     background-size: cover;
-    //box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+    height: 50vh;
+    grid-column-start: 1;
+    grid-column-end: span 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   .product .product__full_info {
-    //border: 1px dashed red;
     display: block;
-    border-top: 1px solid gray;
-    border-right: 1px solid gray;
-    top: 0;
-    width: 25%;
-    margin-top: 30%;
-    //overflow: hidden;
-    max-height: 300px;
-    z-index: 1;
-    //position: absolute;
-  }
-
-  .product .product__title {
-    //border: 1px solid blue;
-    //display: inline-block;
-    display: flex;
-    width: 100%;
-    font-size: 30px;
-    font-weight: normal;
-    text-transform: none;
-    margin: 3vh auto;
-  }
-
-  .product .product__description {
-    //border: 1px solid blue;
-    //display: inline-block;
-    display: flex;
-    text-align: left;
-    text-transform: none;
-  }
-
-  .product .product__price {
-    //display: inline-block;
-    display: flex;
-    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: span 8;
   }
 
   .product .product__button {
-    position: relative;
-    left: auto;
-    width: auto;
-    margin-left: -25vw;
-    z-index: 20;
-    padding-right: 0;
-    //border-right: rgba(172, 81, 81, 0.67);
+    grid-column-start: 1;
+    grid-column-end: span 8;
   }
-} // End min-width 992px
+  .product .product__button a {
+    display: block;
+    color: white;
+    background-color: #a17a63;
+    text-transform: uppercase;
+    padding: 33px 36px;
+    //width: 100%;
+    //position: absolute;
+    //right: 0;
+    //bottom: 0;
+    grid-column-start: 1;
+    grid-column-end: span 8;
+  }
+
+  .product__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  p.product__description {
+    font-size: 16px;
+    margin: 2px;
+  }
+
+  p.product__price {
+    font-size: 30px;
+    margin: 2px;
+  }
+} // End max-width 991px
+
+.product__intro h3 {
+  font-size: 44px;
+}

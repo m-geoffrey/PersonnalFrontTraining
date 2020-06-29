@@ -10,6 +10,7 @@ export class PortfolioComponent implements OnInit {
   hamburger = false;
   menuDisplay = true;
   navMenu = false;
+  products = ['Ring', 'Necklace'];
 
   constructor() { }
 
