@@ -388,6 +388,7 @@ a {
 
 .product__intro h3 {
   font-size: 44px;
+  line-height: 44px;
 }
 
 // START PRODUCT 2
@@ -406,7 +407,7 @@ a {
 .product2__img {
   background: url("../../assets/images/live-3104077_1920.jpg") 38% 50%;
   //display: grid;
-  position: sticky;
+  //position: relative;
   grid-column-start: 7;
   grid-column-end: span 13;
   grid-row-start: 1;
@@ -462,9 +463,9 @@ a {
   flex-direction: row;
   margin: auto;
   padding: 36px;
-  height: 30%;
+  height: auto;
   align-items: center;
-  background-color: #000;
+  background-color: #18181d;
   color: white;
 }
 
@@ -476,6 +477,7 @@ a {
   flex-direction: row;
   height: 80%;
   min-width: 40%;
+  min-height: 20vh;
 }
 
 .product2__card h5 {
@@ -483,13 +485,15 @@ a {
   display: flex;
   flex-direction: column;
   font-size: 18px;
+  margin-bottom: 6px;
+  margin-top: 0;
 }
 
 .product2__card p {
  //border: 1px dashed orange;
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .product2__card #text_card {
@@ -498,8 +502,8 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-
   margin: auto 5px auto 20px;
+  justify-content: flex-end;
 }
 
 .product2__button {
@@ -508,10 +512,11 @@ a {
   //display: flex;
   //grid-column-start: 5;
   //grid-column-end: span 6;
-  background-color: #555555;
+  background-color: #3b3e45;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+  border-bottom: 1px solid #3b3e45;
 }
 
 .product2__button div {
@@ -521,33 +526,45 @@ a {
   flex-direction: row;
 }
 
-.product2__info {
-  display: flex;
-  flex-direction: row;
-  border: 1px dashed orange;
-  grid-column-start: 6;
-  grid-column-end: span 6;
-  min-height: 30%;
-}
-
+// right side
 #rightCard {
   //border: 1px dashed orange;
+  position: relative;
   grid-column-start: span 6;
   grid-column-end: span 13;
+
+  //grid-column-start: 1;
+  //grid-column-end: span 6;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+}
+
+#rightCard .product2__info {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid #ebedee;
 }
 
 #rightCard .product2__info a {
-  flex-direction: row;
-  //padding: 30px;
-  margin: auto;
+  color: lightslategray;
+  display: block;
 }
 
 #rightCard .product2__info p {
-  //display: inline-block;
-  //padding: 30px;
-  //display: flex;
-  //flex-direction: row;
-  //left: 0;
+  display: flex;
+  flex-direction: row;
+  color: lightslategray;
   grid-column-start: 6;
   grid-column-end: span 6;
+
+}
+
+#rightCard .product2__info .product2__price {
+  margin-left: auto;
+  font-weight: bold;
 }
