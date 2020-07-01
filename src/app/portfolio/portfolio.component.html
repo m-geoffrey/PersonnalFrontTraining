@@ -11,7 +11,7 @@
   </div>
   <div class="dropdownsMenu" *ngIf="!hamburger || navMenu">
     <div>
-      <a routerLink="/about">Sections</a>
+      <a routerLink="/home">Back to home</a>
     </div>
     <div>
       <a routerLink="/about">Layouts</a>
@@ -54,9 +54,7 @@
 
 
 <div class="product" *ngFor="let product of products">
-<!--  <div class="product__button">-->
-<!--    <a>Discover Products</a>-->
-<!--  </div>-->
+
   <div class="product__intro">
 <!--    <h3>Haola Bola</h3>-->
     <h3>{{product}}</h3>
@@ -107,11 +105,6 @@
       <div>Discover Products</div>
     </a>
   </div>
-<!--  <div id="displayCard"></div>-->
-
-<!--  <a class="product2__button">-->
-<!--    <div>Discover Products</div>-->
-<!--  </a>-->
 
   <div id="rightCard"> <!-- right side -->
     <div class="product2__img" ></div>
