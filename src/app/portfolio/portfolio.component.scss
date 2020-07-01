@@ -575,7 +575,7 @@ a {
     margin-top: 5vh;
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 96vw;
   }
 
   .product2 #rightCard {
@@ -629,7 +629,7 @@ a {
   .product2 .product2__intro {
     //border: 1px solid red;
     display: flex;
-    max-width: 738px;
+    max-width: 96vw;
     order: 5;
     padding: 0;
     margin: auto;
@@ -649,5 +649,9 @@ a {
 
   .product2__button {
     order: 5;
+  }
+
+  .product2__card h5 {
+    margin-top: 1vh;
   }
 }
