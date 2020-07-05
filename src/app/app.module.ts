@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { GalleryComponent } from './gallery/gallery.component';
 // import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -17,7 +18,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     AboutComponent,
     HeaderComponent,
     HomepageComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
