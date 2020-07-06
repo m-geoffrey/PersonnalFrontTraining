@@ -223,5 +223,63 @@
 } // End max-width 767px
 
 @media all and (max-width: 991px) {
-  //todo padding feature card
+  .feature-card {
+    padding: 30px 10px;
+  }
+}
+
+// ###########################
+// End Features & section card
+// ###########################
+
+#Big-feature {
+  //border: 1px dashed red;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-feature {
+  //border: 1px dashed black;
+  display: flex;
+  min-height: 50vh;
+}
+
+.section-content {
+  //border: 1px dashed red;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-height: 100%;
+  align-items: center;
+  //margin-top: 150px;
+  //margin-bottom: 20%;
+  padding: 0 100px;
+  justify-content: center;
+}
+
+.section-content h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.section-content p {
+  //text-align: center;
+  color: #a5a5a5;
+  //margin: 55px;
+  margin-bottom: 65px;
+
+}
+
+.feature-info {
+  padding: 15px 10px;
+}
+
+.section-image {
+  //height: 550px;
+  min-width: 50%;
+  //display: block;
+  background: url("../../../assets/images/ragondin.jpg") 50% 50%;
+  background-size: cover;
 }
