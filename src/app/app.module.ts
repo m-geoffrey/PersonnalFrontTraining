@@ -8,6 +8,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ProsperoComponent } from './portfolio/prospero/prospero.component';
+import { ColibriComponent } from './portfolio/colibri/colibri.component';
 // import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -19,7 +21,9 @@ import { GalleryComponent } from './gallery/gallery.component';
     HeaderComponent,
     HomepageComponent,
     PortfolioComponent,
-    GalleryComponent
+    GalleryComponent,
+    ProsperoComponent,
+    ColibriComponent
   ],
   imports: [
     BrowserModule,

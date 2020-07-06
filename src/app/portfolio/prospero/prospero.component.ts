@@ -1,19 +1,18 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  selector: 'app-prospero',
+  templateUrl: './prospero.component.html',
+  styleUrls: ['./prospero.component.scss']
 })
-export class PortfolioComponent implements OnInit {
+export class ProsperoComponent implements OnInit {
   public innerWidth = window.innerWidth;
   hamburger = false;
   menuDisplay = true;
   navMenu = false;
   products = ['Ring', 'Beautiful Ring'];
 
-  constructor() {
-  }
+  constructor() { }
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
@@ -25,15 +24,10 @@ export class PortfolioComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.hamburger = this.innerWidth < 992;
-    // if (this.hamburger) {
-    //   this.navMenu
-    // }
   }
 
   toggleNavLinks() {
     console.log(this.navMenu);
-    this.navMenu = !this.navMenu;
+    this.navMenu = ! this.navMenu;
   }
-
 }
