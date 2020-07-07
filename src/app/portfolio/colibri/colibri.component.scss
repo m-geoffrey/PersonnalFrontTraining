@@ -1,0 +1,406 @@
+* {
+  font-family: "Roboto Light", sans-serif;
+  //box-sizing: border-box;
+  //outline: 1px solid red;
+
+}
+
+
+#Hero{
+  //display: flex;
+  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: url("../../../assets/images/tianyi-ma-WiONHd_zYI4-unsplash.jpg") 50% 50%;
+  background-size: cover;
+  opacity: 0.9;
+  position: relative;
+  margin: -8px;
+}
+.navbar {
+  //border: 1px solid red;
+  display: flex;
+  height: 80px;
+  left: 0;
+  //max-width: 1200px;
+  min-width: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper-nav {
+  //border: 1px solid black;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.nav-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: center;
+  letter-spacing: 3px;
+  color: white;
+  //text-shadow: 1px 1px #898989;
+  text-transform: uppercase;
+
+}
+.nav-brand a {
+  display: flex;
+  vertical-align: middle;
+}
+
+.nav-link {
+  //border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.test {
+  display: none;
+}
+
+@media all and (max-width: 991px) {
+  .nav-link {
+    display: none;
+  }
+
+  .test {
+    display: block;
+    color: white;
+  }
+}
+
+.nav-link li a {
+  margin: 15px;
+  color: #e3d9d9;
+  text-decoration: none;
+  text-transform: capitalize;
+  //text-shadow: 1px 1px #898989;
+}
+
+.arrow-down {
+  //border: 1px solid red;
+  display: flex;
+  //margin-left: 40%;
+  //margin-right: 40%;
+  width: 100px;
+  //height: 100px;
+  margin: 50px 50%;
+  bottom: 5%;
+  //left: 50%;
+  //padding: 25px;
+  position: absolute;
+  //justify-content: space-between
+}
+
+.arrow-down img {
+  margin-left: -36px;
+  height: 70px;
+  background-color: white;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+// ######################
+// START SECTION FEATURES
+// ######################
+
+#Features {
+  //border: 1px dashed black;
+  //height: 80vh;
+  justify-content: center;
+  padding: 120px 70px 56px;
+  box-sizing: unset;
+  //display: flex;
+  //margin-right: auto;
+  //margin-left: auto;
+}
+
+.wrapper-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header h2 {
+  display: block;
+  position: relative;
+  //border: 1px solid red;
+}
+
+.section-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  position: relative;
+}
+
+.element {
+  border: 1px solid #ddd;
+  display: flex;
+  width: 25vw;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+
+.element .card-corner {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 15px;
+  width: 45px;
+  //margin-right: 15px;
+  border-right: 2px solid red;
+  font-size: 17px;
+  padding: 6px;
+}
+
+.feature-card {
+  position: relative;
+  padding: 88px 48px 80px;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+
+.feature-card img {
+  max-height: 75px;
+  max-width: 75px;
+}
+
+.feature-card h5,p,a {
+  text-transform: capitalize;
+}
+
+.feature-card a {
+  text-decoration: underline;
+  display: block;
+  margin-top: 20%;
+  color: #a5a5a5;
+  font-size: 13px;
+}
+
+@media all and (max-width: 767px) {
+  #Features {
+    padding: 0;
+    max-width: 100vw;
+  }
+
+  .wrapper-container {
+    display: flex;
+    flex: 0;
+    box-sizing: border-box;
+    justify-content: right;
+    margin-top: 5vh;
+  }
+
+  .section-cards {
+    flex: 0;
+    display: unset;
+    margin-top: 2vh;
+  }
+
+  .section-cards .element {
+    width: 65%;
+    margin-bottom: 25px;
+  }
+
+  .feature-card {
+    padding: 50px 20px;
+  }
+} // End max-width 767px
+
+@media all and (max-width: 991px) {
+  .feature-card {
+    padding: 30px 10px;
+  }
+}
+
+// ###########################
+// End Features & section card
+// ###########################
+
+#Big-feature {
+  //border: 1px dashed red;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-feature {
+  //border: 1px dashed black;
+  display: flex;
+  min-height: 50vh;
+}
+
+.section-content {
+  //border: 1px dashed red;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-height: 100%;
+  align-items: center;
+  //margin-top: 150px;
+  //margin-bottom: 20%;
+  padding: 0 100px;
+  justify-content: center;
+}
+
+.section-content h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.section-content p {
+  //text-align: center;
+  color: #a5a5a5;
+  //margin: 55px;
+  margin-bottom: 26px;
+
+}
+
+.feature-info {
+  padding: 15px 10px;
+}
+
+.section-image {
+  //height: 550px;
+  min-width: 50%;
+  //display: block;
+  background: url("../../../assets/images/yucel-moran-Hgo98W4jXXA-unsplash.jpg") 50% 50%;
+  background-size: cover;
+}
+
+.btn-big-feature {
+  height: 48px;
+  padding: 12px 20px;
+  text-transform: capitalize;
+  font-size: 15px;
+  border-radius: 0;
+  //border-color: transparent;
+  border-color: #007e89;
+  color: white;
+  //background-color: #009ba8;
+  background-image: linear-gradient(90deg, #009ba8, #007e89);
+  //box-sizing: border-box;
+  //background-image: -webkit-gradient(linear, left top, right top, from(#ff935c), to(#fb406c));
+}
+
+
+//###############
+// Start Contact
+//###############
+
+.contact {
+  //border: 1px solid red;
+  display: flex;
+  width: 100%;
+  margin-top: 8vh;
+  padding-bottom: 95px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  //padding-right: 115px;
+  //padding-left: 75px;
+  //justify-content: flex-end;
+
+}
+
+form {
+  //border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  //justify-content: flex-end;
+
+  margin: auto;
+  box-sizing: border-box;
+  height: 90%;
+}
+
+form label {
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  margin-top: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+form input {
+  height: 40px;
+  padding: 4px 10px;
+  margin-bottom: 8px;
+  border: 1px solid #dddddd;
+}
+
+form button {
+  margin-top: 8px;
+  width: 90px;
+  padding: 15px;
+  color: white;
+  background: linear-gradient(90deg, #009ba8, #007e89);
+}
+
+form textarea {
+  padding: 4px 10px;
+  border: 1px solid #c4c4c4;
+}
+
+.map {
+  //border: 1px dashed orange;
+  width: 50%;
+  display: block;
+  flex-direction: column;
+  //height: 210%;
+  padding: 5px;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.contact-card {
+  border: 1px solid #c4c4c4;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-left: 110px;
+  margin-top: -35px;
+  z-index: 10;
+  background-color: white;
+  padding: 32px 32px 24px;
+}
+
+.contact-card .contact-address {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.contact-card .contact-info {
+  font-size: 13px;
+  font-weight: lighter;
+  margin-bottom: 4px;
+}
+
+.contact-card .contact-info  span {
+  //border: 1px solid red;
+  color: #a5a5a5;
+}

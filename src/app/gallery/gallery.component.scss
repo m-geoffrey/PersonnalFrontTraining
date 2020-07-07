@@ -1,0 +1,62 @@
+* {
+  font-family: 'Monserrat-Light';
+}
+
+.container {
+  //border: 1px solid black;
+  height: 40vh;
+  width: 90%;
+  margin: 8vh auto;
+  display: flex;
+}
+
+.hero {
+  //border: 1px dashed orange;
+  //display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__grid {
+  //border: 1px solid green;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.hero__content {
+  display: flex;
+  //border: 1px dashed orange;
+  height: 100%;
+  width: 100%;
+  grid-column: 2/8;
+  vertical-align: middle;
+  align-items: center;
+  //display: flex;
+  margin: auto;
+}
+
+.hero__title {
+  //border: 1px solid blue;
+  //height: 100%;
+  //width: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #c7c7c7;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  font-size: 44px;
+  vertical-align: bottom;
+  //margin-top: 35%;
+  //text-shadow: 2px 2px #444444;
+}
+
+#silverTower {
+  background: url("../../assets/images/silver_tower.jpeg") no-repeat;
+  background-size: cover;
+}

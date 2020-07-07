@@ -323,7 +323,7 @@ a {
   }
 
   .product #img {
-    background: url("../../assets/images/ring-4279987_1920.jpg") 50% 50%;
+    background: url("../../../assets/images/ring-4279987_1920.jpg") 50% 50%;
     background-size: cover;
     min-height: 850px;
     grid-row-start: span 1;
@@ -379,7 +379,7 @@ a {
 
   .product #img {
     //border: 1px solid red;
-    background: url("../../assets/images/ring-4279987_1920.jpg") 50% 50%  no-repeat;
+    background: url("../../../assets/images/ring-4279987_1920.jpg") 50% 50%  no-repeat;
     background-size: cover;
     display: block;
     height: 50vh;
@@ -448,7 +448,7 @@ a {
 }
 
 .product2__img {
-  background: url("../../assets/images/live-3104077_1920.jpg") 38% 50%;
+  background: url("../../../assets/images/live-3104077_1920.jpg") 38% 50%;
   //display: grid;
   //position: relative;
   grid-column-start: 7;
@@ -514,7 +514,7 @@ a {
 
 .product2__card .product2__card_img {
   //border: 1px solid blue;
-  background: url("../../assets/images/bedroom-416062_1280.jpg") 50% 50%;
+  background: url("../../../assets/images/bedroom-416062_1280.jpg") 50% 50%;
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -533,7 +533,7 @@ a {
 }
 
 .product2__card p {
- //border: 1px dashed orange;
+  //border: 1px dashed orange;
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -813,7 +813,7 @@ a {
   margin-top: 8vh;
   display: flex;
   justify-content: center;
-  background: url("../../assets/images/ratapan-anantawat-26jOOe_fvMY-unsplash.jpg");
+  background: url("../../../assets/images/ratapan-anantawat-26jOOe_fvMY-unsplash.jpg");
   background-size: cover;
   color: white;
   text-align: center;
