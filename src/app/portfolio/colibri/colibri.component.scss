@@ -259,7 +259,7 @@
 }
 
 .section-content h2 {
-  text-align: center;
+  font-size: 40px;
   text-transform: capitalize;
   margin-bottom: 15px;
 }
@@ -268,7 +268,7 @@
   //text-align: center;
   color: #a5a5a5;
   //margin: 55px;
-  margin-bottom: 65px;
+  margin-bottom: 26px;
 
 }
 
@@ -280,6 +280,127 @@
   //height: 550px;
   min-width: 50%;
   //display: block;
-  background: url("../../../assets/images/ragondin.jpg") 50% 50%;
+  background: url("../../../assets/images/yucel-moran-Hgo98W4jXXA-unsplash.jpg") 50% 50%;
   background-size: cover;
+}
+
+.btn-big-feature {
+  height: 48px;
+  padding: 12px 20px;
+  text-transform: capitalize;
+  font-size: 15px;
+  border-radius: 0;
+  //border-color: transparent;
+  border-color: #007e89;
+  color: white;
+  //background-color: #009ba8;
+  background-image: linear-gradient(90deg, #009ba8, #007e89);
+  //box-sizing: border-box;
+  //background-image: -webkit-gradient(linear, left top, right top, from(#ff935c), to(#fb406c));
+}
+
+
+//###############
+// Start Contact
+//###############
+
+.contact {
+  //border: 1px solid red;
+  display: flex;
+  width: 100%;
+  margin-top: 8vh;
+  padding-bottom: 95px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  //padding-right: 115px;
+  //padding-left: 75px;
+  //justify-content: flex-end;
+
+}
+
+form {
+  //border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  //justify-content: flex-end;
+
+  margin: auto;
+  box-sizing: border-box;
+  height: 90%;
+}
+
+form label {
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  margin-top: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+form input {
+  height: 40px;
+  padding: 4px 10px;
+  margin-bottom: 8px;
+  border: 1px solid #dddddd;
+}
+
+form button {
+  margin-top: 8px;
+  width: 90px;
+  padding: 15px;
+  color: white;
+  background: linear-gradient(90deg, #009ba8, #007e89);
+}
+
+form textarea {
+  padding: 4px 10px;
+  border: 1px solid #c4c4c4;
+}
+
+.map {
+  //border: 1px dashed orange;
+  width: 50%;
+  display: block;
+  flex-direction: column;
+  //height: 210%;
+  padding: 5px;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.contact-card {
+  border: 1px solid #c4c4c4;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-left: 110px;
+  margin-top: -35px;
+  z-index: 10;
+  background-color: white;
+  padding: 32px 32px 24px;
+}
+
+.contact-card .contact-address {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.contact-card .contact-info {
+  font-size: 13px;
+  font-weight: lighter;
+  margin-bottom: 4px;
+}
+
+.contact-card .contact-info  span {
+  //border: 1px solid red;
+  color: #a5a5a5;
 }
