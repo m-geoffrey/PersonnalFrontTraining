@@ -472,3 +472,82 @@ form textarea {
     margin-right: 10px;
   }
 }
+
+
+//##################
+// Start Footer
+//##################
+
+.footer {
+  background: url("../../../assets/images/annie-spratt-g5DkG2ZF7ZY-unsplash.jpg") 50% 50%;
+  background-size: cover;
+  padding: 0 40px;
+  max-width: 1200px;
+  border: 16px solid white;
+  filter: grayscale(0.60);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.footer-about {
+  //border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 35vh;
+  padding: 0 15px;
+}
+
+
+
+.footer-links {
+  //border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  padding: 0 15px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 12px 0;
+}
+
+
+.footer-blog {
+  //border: 1px dashed orange;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.footer-copyright {
+  display: flex;
+  padding: 20px 0;
+  margin-top: 60px;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 1px solid #c4c4c4;
+}
+
+.footer-title {
+  color: white;
+  font-size: 11px;
+  margin: 34px 0 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  color: white;
+  font-size: 14px;
+  margin: 8px 0 24px;
+}
+
