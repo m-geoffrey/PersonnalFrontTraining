@@ -482,8 +482,9 @@ form textarea {
   background: url("../../../assets/images/annie-spratt-g5DkG2ZF7ZY-unsplash.jpg") 50% 50%;
   background-size: cover;
   padding: 0 40px;
+  min-width: 90%;
   max-width: 1200px;
-  border: 16px solid white;
+  border: 16px solid red;
   filter: grayscale(0.60);
 }
 
@@ -491,7 +492,7 @@ form textarea {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 40px;
 }
 
@@ -500,10 +501,17 @@ form textarea {
   display: flex;
   flex-direction: column;
   width: 20%;
-  height: 35vh;
   padding: 0 15px;
+  margin-right: 8%;
 }
+.footer-social-media {
+  cursor: pointer !important;
 
+}
+.footer-social-media a img {
+  height: 24px;
+  padding: 8px;
+}
 
 
 .footer-links {
@@ -512,6 +520,7 @@ form textarea {
   flex-direction: column;
   width: 15%;
   padding: 0 15px;
+  font-size: 13px;
 }
 
 .footer-links a {
@@ -525,7 +534,37 @@ form textarea {
   //border: 1px dashed orange;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  //width: 40%;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 1;
+}
+
+.footer-item {
+  display: flex;
+  margin: auto;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 24px 0 20px;
+}
+
+.footer-image {
+  display: block;
+  width: 60px;
+  height: 50px;
+  background: url("../../../assets/images/carolyn-v-N8Lg1U8A8Vs-unsplash.jpg") 50% 50%;
+  background-size: cover;
+  margin-right: 25px;
+}
+.footer-item .footer-post-header {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.footer-post-date {
+  font-size: 10px;
+  margin-bottom: 15px;
 }
 
 .footer-copyright {
@@ -535,6 +574,9 @@ form textarea {
   width: 100%;
   justify-content: space-between;
   border-top: 1px solid #c4c4c4;
+  color: white;
+  font-size: 13px;
+
 }
 
 .footer-title {
@@ -547,7 +589,15 @@ form textarea {
 
 .paragraph {
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   margin: 8px 0 24px;
+}
+
+.footer-blog-link {
+  //border-bottom: 1px solid red;
+  text-decoration: none;
+  color: white;
+  margin-top: 19px;
+  font-size: 14px;
 }
 
