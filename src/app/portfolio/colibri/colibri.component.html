@@ -5,13 +5,16 @@
         <a class="logo">Colibri</a>
       </nav>
       <nav>
-        <ul class="nav-link">
+        <ul class="nav-link" *ngIf="!hamburger || navDisplay">
           <li><a href="">link1</a></li>
           <li><a href="">link1</a></li>
           <li><a href="">link1</a></li>
           <li><a href="">link1</a></li>
         </ul>
-        <a class="test">burger</a>
+        <a class="hamburger"
+           *ngIf="!hamburger"
+           (click)="navToggle()"
+           [ngClass]="{'change': navDisplay}">burger</a>
       </nav>
     </div>
   </div>
@@ -24,7 +27,9 @@
       <h2>Colibri is perfect for you</h2>
     </div>
     <div class="section-cards">
-      <div class="element">
+      <div
+        class="element"
+        [ngClass]="{'animate__animated animate__fadeInUp' : fadeInUp }">
         <div class="card-corner">01</div>
         <div class="feature-card">
           <img src="../../../assets/images/mac.svg" alt="" class="feature-icon">
@@ -34,7 +39,9 @@
         </div>
       </div>
 
-      <div class="element">
+      <div
+        class="element"
+        [ngClass]="{'animate__animated animate__fadeInUp' : fadeInUp }">
         <div class="card-corner">02</div>
         <div class="feature-card">
           <img src="../../../assets/images/mac.svg" alt="" class="feature-icon">
@@ -44,7 +51,9 @@
         </div>
       </div>
 
-      <div class="element">
+      <div
+        class="element"
+        [ngClass]="{'animate__animated animate__fadeInUp' : fadeInUp }">
         <div class="card-corner">03</div>
         <div class="feature-card">
           <img src="../../../assets/images/mac.svg" alt="" class="feature-icon">
@@ -60,16 +69,17 @@
 <div id="Big-feature">
   <div class="section-feature">
     <div class="section-content">
-      <div class="feature-info">
+      <div class="feature-info"
+        [ngClass]="{'animate__animated animate__fadeInRight' : fadeInRight }">
+<!--        animate__animated ">-->
         <h2>title</h2>
         <p>Our ships have completed their scan of the area and found nothing. If the Millennium Falcon went into light-speed,
           it'll be on the other side of the galaxy by now.</p>
         <button class="btn-big-feature">buy template</button>
       </div>
     </div>
-  <div class="section-image">
-
-  </div>
+    <div class="section-image">
+    </div>
   </div>
 </div>
 

@@ -61,19 +61,20 @@
   list-style: none;
   padding: 0;
 }
-
-.test {
-  display: none;
-}
+//
+//.hamburger {
+//  display: none;
+//}
 
 @media all and (max-width: 991px) {
-  .nav-link {
-    display: none;
-  }
+  //.nav-link {
+  //  display: none;
+  //}
 
-  .test {
+  .hamburger {
     display: block;
     color: white;
+    border: 5px solid red;
   }
 }
 
@@ -481,11 +482,16 @@ form textarea {
 .footer {
   background: url("../../../assets/images/annie-spratt-g5DkG2ZF7ZY-unsplash.jpg") 50% 50%;
   background-size: cover;
+  //display: flex;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 40px;
-  min-width: 90%;
-  max-width: 1200px;
-  border: 16px solid red;
+  width: 98vw;
+  min-width: 98vw;
+  //max-width: 1200px;
+  border: 16px solid white;
   filter: grayscale(0.60);
+  box-sizing: border-box;
 }
 
 .footer-container {

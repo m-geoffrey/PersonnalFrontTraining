@@ -10,8 +10,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ProsperoComponent } from './portfolio/prospero/prospero.component';
 import { ColibriComponent } from './portfolio/colibri/colibri.component';
-// import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
-// import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+import { WINDOW_PROVIDERS } from './services/window.service';
 
 
 @NgModule({
@@ -28,10 +28,10 @@ import { ColibriComponent } from './portfolio/colibri/colibri.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // NgbModule,
-    // NgbCollapseModule
   ],
-  providers: [],
+  providers: [
+    WINDOW_PROVIDERS
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
