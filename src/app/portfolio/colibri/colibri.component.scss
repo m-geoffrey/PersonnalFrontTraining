@@ -61,28 +61,67 @@
   list-style: none;
   padding: 0;
 }
-
-.test {
-  display: none;
-}
+//
+//.hamburger {
+//  display: none;
+//}
 
 @media all and (max-width: 991px) {
   .nav-link {
-    display: none;
+    //border: 1px solid red;
+    background: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    height: auto; //todo check this later
+    width: 100%;
+    text-align: center;
   }
 
-  .test {
+  .nav-link li {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    //margin: 5px;
+    border-top: 1px solid #c4c4c4;
+    width: 95%;
+    padding: 8px;
+  }
+
+  .nav-link li:nth-child(1) {
+    border: none;
+  }
+
+  .nav-link li a {
+    //border-bottom: 1px solid red;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-item {
+    color: #18181d;
+    text-decoration: none;
+  }
+
+  .hamburger {
     display: block;
     color: white;
+    //border: 5px solid red;
   }
-}
+} // End max-width 991px
 
-.nav-link li a {
-  margin: 15px;
-  color: #e3d9d9;
-  text-decoration: none;
-  text-transform: capitalize;
-  //text-shadow: 1px 1px #898989;
+@media all and (min-width: 992px) {
+  .nav-link li a {
+    margin: 15px;
+    color: #e3d9d9;
+    text-decoration: none;
+    text-transform: capitalize;
+    //text-shadow: 1px 1px #898989;
+  }
 }
 
 .arrow-down {
@@ -481,17 +520,23 @@ form textarea {
 .footer {
   background: url("../../../assets/images/annie-spratt-g5DkG2ZF7ZY-unsplash.jpg") 50% 50%;
   background-size: cover;
+  //display: flex;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 40px;
-  max-width: 1200px;
+  width: 98vw;
+  min-width: 98vw;
+  //max-width: 1200px;
   border: 16px solid white;
   filter: grayscale(0.60);
+  box-sizing: border-box;
 }
 
 .footer-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 40px;
 }
 
@@ -500,10 +545,17 @@ form textarea {
   display: flex;
   flex-direction: column;
   width: 20%;
-  height: 35vh;
   padding: 0 15px;
+  margin-right: 8%;
 }
+.footer-social-media {
+  cursor: pointer !important;
 
+}
+.footer-social-media a img {
+  height: 24px;
+  padding: 8px;
+}
 
 
 .footer-links {
@@ -512,6 +564,7 @@ form textarea {
   flex-direction: column;
   width: 15%;
   padding: 0 15px;
+  font-size: 13px;
 }
 
 .footer-links a {
@@ -525,7 +578,37 @@ form textarea {
   //border: 1px dashed orange;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  //width: 40%;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 1;
+}
+
+.footer-item {
+  display: flex;
+  margin: auto;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 24px 0 20px;
+}
+
+.footer-image {
+  display: block;
+  width: 60px;
+  height: 50px;
+  background: url("../../../assets/images/carolyn-v-N8Lg1U8A8Vs-unsplash.jpg") 50% 50%;
+  background-size: cover;
+  margin-right: 25px;
+}
+.footer-item .footer-post-header {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.footer-post-date {
+  font-size: 10px;
+  margin-bottom: 15px;
 }
 
 .footer-copyright {
@@ -535,6 +618,9 @@ form textarea {
   width: 100%;
   justify-content: space-between;
   border-top: 1px solid #c4c4c4;
+  color: white;
+  font-size: 13px;
+
 }
 
 .footer-title {
@@ -547,7 +633,15 @@ form textarea {
 
 .paragraph {
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   margin: 8px 0 24px;
+}
+
+.footer-blog-link {
+  //border-bottom: 1px solid red;
+  text-decoration: none;
+  color: white;
+  margin-top: 19px;
+  font-size: 14px;
 }
 

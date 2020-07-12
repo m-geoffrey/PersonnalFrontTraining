@@ -1,17 +1,23 @@
 <div id="Hero">
-  <div class="navbar">
+  <div class="navbar" style="z-index: 1000">
     <div class="wrapper-nav">
       <nav class="nav-brand">
         <a class="logo">Colibri</a>
       </nav>
       <nav>
-        <ul class="nav-link">
-          <li><a href="">link1</a></li>
-          <li><a href="">link1</a></li>
-          <li><a href="">link1</a></li>
-          <li><a href="">link1</a></li>
+        <ul
+          class="nav-link"
+          [ngClass]="{'animate__animated animate__slideInDown': hamburger}"
+          *ngIf="!hamburger|| !navMenu">
+            <li><a href="" class="nav-item">link1</a></li>
+            <li><a href="" class="nav-item">link1</a></li>
+            <li><a href="" class="nav-item">link1</a></li>
+            <li><a href="#" class="nav-item">link1</a></li>
         </ul>
-        <a class="test">burger</a>
+        <a class="hamburger"
+           *ngIf="hamburger"
+           (click)="navToggle()"
+           [ngClass]="{'change': navMenu}">burger</a>
       </nav>
     </div>
   </div>
@@ -24,7 +30,9 @@
       <h2>Colibri is perfect for you</h2>
     </div>
     <div class="section-cards">
-      <div class="element">
+      <div
+        class="element"
+        [ngClass]="{'animate__animated animate__fadeInUp' : fadeInUp }">
         <div class="card-corner">01</div>
         <div class="feature-card">
           <img src="../../../assets/images/mac.svg" alt="" class="feature-icon">
@@ -34,7 +42,9 @@
         </div>
       </div>
 
-      <div class="element">
+      <div
+        class="element"
+        [ngClass]="{'animate__animated animate__fadeInUp' : fadeInUp }">
         <div class="card-corner">02</div>
         <div class="feature-card">
           <img src="../../../assets/images/mac.svg" alt="" class="feature-icon">
@@ -44,7 +54,9 @@
         </div>
       </div>
 
-      <div class="element">
+      <div
+        class="element"
+        [ngClass]="{'animate__animated animate__fadeInUp' : fadeInUp }">
         <div class="card-corner">03</div>
         <div class="feature-card">
           <img src="../../../assets/images/mac.svg" alt="" class="feature-icon">
@@ -60,16 +72,17 @@
 <div id="Big-feature">
   <div class="section-feature">
     <div class="section-content">
-      <div class="feature-info">
+      <div class="feature-info"
+        [ngClass]="{'animate__animated animate__fadeInRight' : fadeInRight }">
+<!--        animate__animated ">-->
         <h2>title</h2>
         <p>Our ships have completed their scan of the area and found nothing. If the Millennium Falcon went into light-speed,
           it'll be on the other side of the galaxy by now.</p>
         <button class="btn-big-feature">buy template</button>
       </div>
     </div>
-  <div class="section-image">
-
-  </div>
+    <div class="section-image">
+    </div>
   </div>
 </div>
 
@@ -118,9 +131,9 @@
         We create amazing templates for inspired people all around the world
       </div>
       <div class="footer-social-media">
-        <a href="">twitter</a>
-        <a href="">facebook</a>
-        <a href="">instagram</a>
+        <a href="https://twitter.com" target="_blank"><img src="../../../assets/images/icons/twitter.svg" alt=""></a>
+        <a href="https://facebook.com" target="_blank"><img src="../../../assets/images/icons/facebook.svg" alt=""></a>
+        <a href="https://instagram.com" target="_blank"><img src="../../../assets/images/icons/instagram.svg" alt=""></a>
       </div>
     </div>
 
@@ -146,21 +159,25 @@
       <h6 class="footer-title">Recent Posts</h6>
       <div class="footer-posts">
         <div class="footer-item">
-          <a href="">image</a>
-          <div class="footer-post-date">
-            April 9th, 2020
+          <a href="" class="footer-image"></a>
+          <div>
+            <div class="footer-post-date">
+              April 9th, 2020
+            </div>
+            <a href="" class="footer-post-header">Some text from post</a>
           </div>
-          <a href="" class="footer-post-header">Some text from post</a>
         </div>
         <div class="footer-item">
-          <a href="">image</a>
-          <div class="footer-post-date">
-            April 16th, 2020
+          <a href="" class="footer-image"></a>
+          <div>
+            <div class="footer-post-date">
+              April 16th, 2020
+            </div>
+            <a href="" class="footer-post-header">Some text from 2nd post</a>
           </div>
-          <a href="" class="footer-post-header">Some text from 2nd post</a>
         </div>
       </div>
-      <a href="">View All Posts</a>
+      <a href="" class="footer-blog-link">View All Posts</a>
     </div>
 
     <div class="footer-copyright">
@@ -184,6 +201,7 @@
     <span>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></span><br>
     <span>Photo by <a href="https://unsplash.com/@yucelmoran?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Yucel Moran</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span><br>
     <span>Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/background?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    <span>Photo by <a href="https://unsplash.com/@sixteenmilesout?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Carolyn V</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 
 
