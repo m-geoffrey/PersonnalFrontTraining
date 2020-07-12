@@ -24,6 +24,9 @@ export class ProsperoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (innerWidth < 992) {
+      this.hamburger = true;
+    }
   }
 
   toggleNavLinks() {

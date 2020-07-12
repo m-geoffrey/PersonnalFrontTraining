@@ -5,16 +5,16 @@
         <a class="logo">Colibri</a>
       </nav>
       <nav>
-        <ul class="nav-link" *ngIf="!hamburger || navDisplay">
-          <li><a href="">link1</a></li>
-          <li><a href="">link1</a></li>
-          <li><a href="">link1</a></li>
-          <li><a href="">link1</a></li>
+        <ul class="nav-link" *ngIf="!hamburger|| navMenu">
+          <li><a href="" class="nav-item">link1</a></li>
+          <li><a href="" class="nav-item">link1</a></li>
+          <li><a href="" class="nav-item">link1</a></li>
+          <li><a href="" class="nav-item">link1</a></li>
         </ul>
         <a class="hamburger"
-           *ngIf="!hamburger"
+           *ngIf="hamburger"
            (click)="navToggle()"
-           [ngClass]="{'change': navDisplay}">burger</a>
+           [ngClass]="{'change': navMenu}">burger</a>
       </nav>
     </div>
   </div>
