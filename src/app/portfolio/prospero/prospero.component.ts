@@ -21,6 +21,9 @@ export class ProsperoComponent implements OnInit {
     if (this.hamburger) {
       this.menuDisplay = false;
     }
+    if (this.innerWidth > 991) {
+      this.navMenu = false;
+    }
   }
 
   ngOnInit(): void {

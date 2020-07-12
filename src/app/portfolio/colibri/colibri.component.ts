@@ -12,7 +12,7 @@ export class ColibriComponent implements OnInit {
   fadeInRight = false;
   fadeInUp = false;
   hamburger = false;
-  navMenu = false;
+  navMenu = true;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -30,7 +30,7 @@ export class ColibriComponent implements OnInit {
     this.innerWidth = event.target.innerWidth;
     this.hamburger = this.innerWidth < 992;
     if (this.hamburger) {
-      this.navMenu = false;
+      this.navMenu = true;
     }
   }
 

@@ -1,15 +1,18 @@
 <div id="Hero">
-  <div class="navbar">
+  <div class="navbar" style="z-index: 1000">
     <div class="wrapper-nav">
       <nav class="nav-brand">
         <a class="logo">Colibri</a>
       </nav>
       <nav>
-        <ul class="nav-link" *ngIf="!hamburger|| navMenu">
-          <li><a href="" class="nav-item">link1</a></li>
-          <li><a href="" class="nav-item">link1</a></li>
-          <li><a href="" class="nav-item">link1</a></li>
-          <li><a href="" class="nav-item">link1</a></li>
+        <ul
+          class="nav-link"
+          [ngClass]="{'animate__animated animate__slideInDown': hamburger}"
+          *ngIf="!hamburger|| !navMenu">
+            <li><a href="" class="nav-item">link1</a></li>
+            <li><a href="" class="nav-item">link1</a></li>
+            <li><a href="" class="nav-item">link1</a></li>
+            <li><a href="#" class="nav-item">link1</a></li>
         </ul>
         <a class="hamburger"
            *ngIf="hamburger"
