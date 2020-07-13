@@ -50,4 +50,9 @@ export class ColibriComponent implements OnInit {
     this.navMenu = ! this.navMenu;
   }
 
+  scroll(el: HTMLElement) {
+    console.log('ok');
+    el.scrollIntoView({behavior: 'smooth'});
+  }
+
 }
