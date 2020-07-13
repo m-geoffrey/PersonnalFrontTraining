@@ -9,10 +9,10 @@
           class="nav-link"
           [ngClass]="{'animate__animated animate__slideInDown': hamburger}"
           *ngIf="!hamburger|| !navMenu">
-            <li><a href="" class="nav-item">link1</a></li>
-            <li><a href="" class="nav-item">link1</a></li>
-            <li><a href="" class="nav-item">link1</a></li>
-            <li><a href="#" class="nav-item">link1</a></li>
+            <li><a routerLink="/" class="nav-item">Home</a></li>
+            <li><a routerLink="/portfolio" class="nav-item">Portfolio</a></li>
+            <li><a routerLink="/about" class="nav-item">Contact</a></li>
+            <li><a href="#" class="nav-item">Blog</a></li>
         </ul>
         <a class="hamburger"
            *ngIf="hamburger"
@@ -21,10 +21,16 @@
       </nav>
     </div>
   </div>
-  <div class="arrow-down"><a><img src="../../../assets/images/arrow.svg" alt=""></a></div>
+  <div class="arrow-down">
+    <a>
+      <img src="../../../assets/images/arrow.svg"
+           alt="arrow.navigation"
+           (click)="scroll(features)">
+    </a>
+  </div>
 </div>
 
-<div id="Features">
+<div id="Features" #features>
   <div class="wrapper-container">
     <div class="section-header">
       <h2>Colibri is perfect for you</h2>
