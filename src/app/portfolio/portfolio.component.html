@@ -1,12 +1,18 @@
 <app-header></app-header>
 
-<div style="margin-top: 4vh; text-align: center; display: block">portfolio link </div>
+<div class="portfolio-title">
+  portfolio link
+</div>
 <br><br>
 
-<div>
-  <a routerLink="/portfolio/prospero">prospero UI link</a>
-</div>
-<hr style="margin-top: 2vh; margin-bottom: 2vh;">
-<div>
-  <a routerLink="/portfolio/colibri">colibri UI link</a>
+<div class="portfolio">
+  <div class="portfolio-card">
+    <a routerLink="/portfolio/prospero" class="title">prospero UI link</a>
+    <div class="thumbnail-1"></div>
+  </div>
+  <!--<hr style="margin-top: 2vh; margin-bottom: 2vh;">-->
+  <div class="portfolio-card">
+    <a routerLink="/portfolio/colibri" class="title">colibri UI link</a>
+    <div class="thumbnail-2"></div>
+  </div>
 </div>
