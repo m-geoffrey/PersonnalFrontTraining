@@ -51,7 +51,7 @@ export class ColibriComponent implements OnInit {
   }
 
   scroll(el: HTMLElement) {
-    console.log('ok');
+    // console.log('ok');
     el.scrollIntoView({behavior: 'smooth'});
   }
 
