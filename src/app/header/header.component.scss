@@ -1,3 +1,7 @@
+* {
+  font-family: 'Monserrat-Light';
+}
+
 .nav {
   //border: 1px solid red;
   height: 5vh;
@@ -36,6 +40,7 @@
 }
 
 .nav .list {
+  //border: 1px solid orange;
   margin: auto 33px auto auto;
   display: flex;
   width: auto;
@@ -44,6 +49,13 @@
 
 .list ul {
   list-style: none;
+  display: flex;
+  margin: auto;
+}
+
+.list ul li {
+  display: flex;
+  padding-top: 10px;
 }
 
 .list a {
@@ -53,6 +65,7 @@
 
 .nav ul li a {
   margin-top: 0;
+  letter-spacing: 1.5px;
 }
 
 @media all and (max-width: 991px) {
