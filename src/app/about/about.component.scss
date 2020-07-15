@@ -57,90 +57,144 @@ header .presentationImage {
   margin: auto;
 }
 
-.skills {
-  //border: 1px solid black;
+//.skills {
+//  //border: 1px solid black;
+//  display: flex;
+//  width: 70vw;
+//  margin: 3vh auto;
+//}
+//
+//.skills .container {
+//  //border: 1px solid purple;
+//  display: block;
+//  width: 45%;
+//  margin-left: 0;
+//  margin-right: 5%;
+//}
+//
+//.skills .container h3 {
+//  //border: 1px solid red;
+//  position: relative;
+//  width: 50%;
+//}
+//
+//.skills .container p {
+//   //border: 1px solid green;
+//  position: relative;
+//  display: flex;
+//  text-align: justify;
+//}
+//
+//
+//.skillItems {
+//  //border: 1px solid red;
+//  border: 1px dashed red;
+//  width: 45%;
+//  margin-left: 5vw;
+//  text-align: center;
+//}
+//
+//.skillItems p {
+//  font-weight: bold;
+//}
+//
+//.skillItems img {
+//  max-height: 20%;
+//  max-width: 20%;
+//  display: block;
+//}
+//
+//@media all and (max-width: 900px) {
+//  .skills {
+//    //border: 1px solid black;
+//    min-width: 70vw;
+//    position: relative;
+//    display: block;
+//  }
+//  .skills .container {
+//    position: relative;
+//    min-width:100%;
+//  }
+//
+//  .skills .container p {
+//    //border: 1px solid blue;
+//    width: 100%;
+//    min-width: 100%;
+//    position: relative;
+//  }
+//
+//  .skillItems {
+//    //border: 1px solid red;
+//    margin: auto;
+//    width: 100%;
+//    min-width: 100%;
+//  }
+//}
+
+
+//######################
+//  Start Skills Section
+//######################
+
+#skills {
+  width: 90vw;
+  margin: auto;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.skills-logos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 16px;
+  grid-row-gap: 32px;
+  padding: 56px 0;
+  //width: 100%;
+  //border: 2px solid red;
+}
+
+.skills-logos-grid img {
+  max-height: 120px;
   display: flex;
-  width: 70vw;
-  margin: 3vh auto;
+  margin: auto;
 }
 
-.skills .container {
-  //border: 1px solid purple;
-  display: block;
-  width: 45%;
-  margin-left: 0;
-  margin-right: 5%;
-}
-
-.skills .container h3 {
-  //border: 1px solid red;
-  position: relative;
-  width: 50%;
-}
-
-.skills .container p {
-   //border: 1px solid green;
-  position: relative;
-  display: flex;
-  text-align: justify;
-}
-
-
-.skillItems {
-  //border: 1px solid red;
-  border: 1px dashed red;
-  width: 45%;
-  margin-left: 5vw;
-  text-align: center;
-}
-
-.skillItems p {
-  font-weight: bold;
-}
-
-.skillItems img {
-  max-height: 20%;
-  max-width: 20%;
-  display: block;
-}
-
-@media all and (max-width: 900px) {
-  .skills {
-    //border: 1px solid black;
-    min-width: 70vw;
-    position: relative;
-    display: block;
+@media all and (max-width: 767px) {
+  #skills .container {
+    padding: 0;
   }
-  .skills .container {
-    position: relative;
-    min-width:100%;
+  .skills-logos-grid {
+    grid-template-columns: 1fr 1fr;
   }
-
-  .skills .container p {
-    //border: 1px solid blue;
-    width: 100%;
-    min-width: 100%;
-    position: relative;
+  .section-header h2 {
+    text-align: center;
   }
+}
 
-  .skillItems {
-    //border: 1px solid red;
+@media all and (max-width: 476px) {
+  .skills-logos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .skills-logos-grid img {
+    max-height: 80px;
+    display: flex;
     margin: auto;
-    width: 100%;
-    min-width: 100%;
   }
 }
 
-
-/*
-    start contact form
-*/
+//####################
+//  Start Contact Form
+//####################
 
 .container {
   //display: flex;
-  margin-top: 5vh;
+  margin-top: 6vh;
   max-width: 98vw;
-  padding: 0 32px;
+  padding: 0 28px;
 }
 
 .contact-grid {
@@ -148,7 +202,7 @@ header .presentationImage {
   display: grid;
   grid-template-columns: 1fr 0.25fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 16px;
+  grid-gap: 8px;
 }
 
 .contact-grid h3 {
@@ -228,3 +282,25 @@ header .presentationImage {
 //}
 
 
+@media all and (max-width: 767px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-grid h3 {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 479px){
+  .container {
+    padding: 0 14px;
+  }
+  .text-form {
+    display: block;
+  }
+  .text-form input {
+    width: 100%;
+  }
+}
