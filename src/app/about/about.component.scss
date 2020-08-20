@@ -9,53 +9,53 @@
 }
 
 
-header {
-  //border: 1px solid red;
-  display: flex;
-  width: 70vw;
-  margin: auto;
-  margin-top: 10vh;
-}
-
-header .presentationText {
-  //border: 1px solid green;
-  width: 40%;
-  margin-bottom: 2vh;
-}
-
-header .presentationImage {
-  position: relative;
-  width: 60%;
-  //border: 1px solid green;
-  margin: auto;
-}
-
-@media all and (max-width: 900px) {
-  header {
-    display: block;
-  }
-  header .presentationText {
-    //border: 1px solid green;
-    width: 100%;
-    height: auto;
-    display: flex;
-  }
-
-  header .presentationImage {
-    position: relative;
-    width: 100%;
-    display: flex;
-    height: auto;
-    margin: auto;
-  }
-}
-
-.presentationImage img {
-  display: flex;
-  width: 60%;
-  height: 100%;
-  margin: auto;
-}
+//header {
+//  //border: 1px solid red;
+//  display: flex;
+//  width: 70vw;
+//  margin: auto;
+//  margin-top: 10vh;
+//}
+//
+//header .presentationText {
+//  //border: 1px solid green;
+//  width: 40%;
+//  margin-bottom: 2vh;
+//}
+//
+//header .presentationImage {
+//  position: relative;
+//  width: 60%;
+//  //border: 1px solid green;
+//  margin: auto;
+//}
+//
+//@media all and (max-width: 900px) {
+//  header {
+//    display: block;
+//  }
+//  header .presentationText {
+//    //border: 1px solid green;
+//    width: 100%;
+//    height: auto;
+//    display: flex;
+//  }
+//
+//  header .presentationImage {
+//    position: relative;
+//    width: 100%;
+//    display: flex;
+//    height: auto;
+//    margin: auto;
+//  }
+//}
+//
+//.presentationImage img {
+//  display: flex;
+//  width: 60%;
+//  height: 100%;
+//  margin: auto;
+//}
 
 //.skills {
 //  //border: 1px solid black;
@@ -131,6 +131,52 @@ header .presentationImage {
 //  }
 //}
 
+//######################
+//  Start Header Section
+//######################
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8vh;
+  padding: 0 28px 15px;
+}
+
+.header-wrapper {
+  display: flex;
+}
+.presentationText {
+  width: 60%;
+  margin: auto;
+}
+
+.presentationText p{
+  font-size: 18px;
+  line-height: 24px;
+  //margin: auto;
+}
+
+.socialLinks {
+  display: flex;
+  padding: 15px 0;
+}
+
+.socialLinks img {
+  height: 32px;
+  width: 32px;
+  padding: 15px 15px 15px 0;
+}
+
+.header-image {
+  display: flex;
+  width: 40%;
+}
+.header-image img {
+  //position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
 
 //######################
 //  Start Skills Section
@@ -291,6 +337,9 @@ header .presentationImage {
   .contact-grid h3 {
     text-align: center;
   }
+  .btn-contact-form {
+    width: 33%;
+  }
 }
 
 @media all and (max-width: 479px){
@@ -301,6 +350,9 @@ header .presentationImage {
     display: block;
   }
   .text-form input {
+    width: 100%;
+  }
+  .btn-contact-form {
     width: 100%;
   }
 }

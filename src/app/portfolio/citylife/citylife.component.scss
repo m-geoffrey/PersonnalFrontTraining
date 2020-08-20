@@ -1,0 +1,236 @@
+$border: 1px solid red;
+
+* {
+  font-family: "Lora";
+}
+
+.navbar {
+  //border: $border;
+  height: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  cursor: pointer;
+  vertical-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0 0.5em;
+}
+.hamburger {
+  background: url("../../../assets/images/icons/hamburger.svg") no-repeat;
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0.5em;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+  float: right;
+}
+.nav-item {
+  color: #3b3e45;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: auto;
+  min-height: 100%;
+}
+
+ul > li > a {
+  padding: 22px 24px;
+  float: right;
+}
+// END NAVBAR
+
+.hero-layout {
+  height: 70vh;
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.hero-image {
+  background: url("../../../assets/images/citylife/olivia-bliss-HTnycx0h_kk-unsplash.jpg") bottom;
+  background-size: cover;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-row-start: 1;
+}
+
+.hero-text {
+  grid-column-end: 3;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-row-start: 2;
+  background: white;
+  padding: 20px;
+}
+.hero-text > h1 {
+  text-transform: capitalize;
+  font-size: 38px;
+  letter-spacing: 1.5px;
+  margin-left: 20px;
+}
+.hero-text > p {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 600px;
+  margin-bottom: 45px;
+  font-family: 'Lora';
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: whitesmoke;
+  background-color: #284b64;
+  padding: 12px 18px;
+  cursor: pointer;
+}
+// End Hero
+
+.city-list-wrapper {
+  margin-top: 3em;
+}
+.city-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
+}
+.city {
+  cursor: pointer;
+  height: auto;
+  overflow: hidden;
+}
+.city::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 400ms;
+}
+.city:hover::after {
+  width: 100%;
+}
+.city > p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.image-preview {
+  height: 240px;
+  margin-bottom: 10px;
+}
+//.image-preview:hover {
+//  overflow: auto;
+//  transform: scale(1.2);
+//  transition: 400ms;
+//}
+.city-1 {
+  background: url("../../../assets/images/citylife/restaurant-jason-leung-poI7DelFiVA-unsplash.jpg") 50% 70% no-repeat;
+  background-size: cover;
+}
+.city-2 {
+  background: url("../../../assets/images/citylife/hotel-markus-spiske-g5ZIXjzRGds-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+.city-3 {
+  background: url("../../../assets/images/citylife/miltiadis-fragkidis-5ULk8EgE8tg-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+.city-4 {
+  background: url("../../../assets/images/citylife/museum-deanna-j-3GZlhROZIQg-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+// End City-list
+
+.tour-wrapper {
+  margin-top: 6em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 38px;
+  background: url("../../../assets/images/citylife/city-tour-matteo-catanese-dVCGpKZB_E8-unsplash.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  height: 40vh;
+  padding: 60px;
+}
+.tour-info {
+  grid-column-start: 2;
+  color: white;
+  margin-top: 85px;
+}
+.tour-info > h2 {
+  font-size: 36px;
+}
+.tour-info > button {
+  padding: 12px 24px;
+  border: none;
+  font-weight: bold;
+}
+
+
+
+
+// Start Media Queries
+@media all and (max-width: 479px) {
+  .hero-btn {
+    display: block;
+    margin: auto 10px 10px auto;
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 767px){
+  .tour-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .tour-info {
+    grid-column-start: 1;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .hero-image {
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .hero-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+  }
+  .hero-text > h1 {
+    text-align: center;
+  }
+  .hero-text > p {
+    margin: auto auto 18px;
+    max-width: none;
+  }
+  // End Hero
+
+  .city-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .image-preview {
+    max-height: 120px;
+  }
+}
+
+// fix landscape issues
+@media all and (orientation: landscape) {
+  .city-list-wrapper {
+    margin-top: 70px;
+  }
+}

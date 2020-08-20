@@ -7,6 +7,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProsperoComponent } from './portfolio/prospero/prospero.component';
 import { ColibriComponent } from './portfolio/colibri/colibri.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { CitylifeComponent } from './portfolio/citylife/citylife.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'portfolio/prospero', component: ProsperoComponent },
   { path: 'portfolio/colibri', component: ColibriComponent },
+  { path: 'portfolio/citylife', component: CitylifeComponent },
   { path: 'gallery', component: GalleryComponent }
 ];
 

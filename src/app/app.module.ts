@@ -12,6 +12,7 @@ import { ProsperoComponent } from './portfolio/prospero/prospero.component';
 import { ColibriComponent } from './portfolio/colibri/colibri.component';
 
 import { WINDOW_PROVIDERS } from './services/window.service';
+import { CitylifeComponent } from './portfolio/citylife/citylife.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { WINDOW_PROVIDERS } from './services/window.service';
     PortfolioComponent,
     GalleryComponent,
     ProsperoComponent,
-    ColibriComponent
+    ColibriComponent,
+    CitylifeComponent
   ],
   imports: [
     BrowserModule,
