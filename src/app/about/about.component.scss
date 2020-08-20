@@ -9,138 +9,238 @@
 }
 
 
+//header {
+//  //border: 1px solid red;
+//  display: flex;
+//  width: 70vw;
+//  margin: auto;
+//  margin-top: 10vh;
+//}
+//
+//header .presentationText {
+//  //border: 1px solid green;
+//  width: 40%;
+//  margin-bottom: 2vh;
+//}
+//
+//header .presentationImage {
+//  position: relative;
+//  width: 60%;
+//  //border: 1px solid green;
+//  margin: auto;
+//}
+//
+//@media all and (max-width: 900px) {
+//  header {
+//    display: block;
+//  }
+//  header .presentationText {
+//    //border: 1px solid green;
+//    width: 100%;
+//    height: auto;
+//    display: flex;
+//  }
+//
+//  header .presentationImage {
+//    position: relative;
+//    width: 100%;
+//    display: flex;
+//    height: auto;
+//    margin: auto;
+//  }
+//}
+//
+//.presentationImage img {
+//  display: flex;
+//  width: 60%;
+//  height: 100%;
+//  margin: auto;
+//}
+
+//.skills {
+//  //border: 1px solid black;
+//  display: flex;
+//  width: 70vw;
+//  margin: 3vh auto;
+//}
+//
+//.skills .container {
+//  //border: 1px solid purple;
+//  display: block;
+//  width: 45%;
+//  margin-left: 0;
+//  margin-right: 5%;
+//}
+//
+//.skills .container h3 {
+//  //border: 1px solid red;
+//  position: relative;
+//  width: 50%;
+//}
+//
+//.skills .container p {
+//   //border: 1px solid green;
+//  position: relative;
+//  display: flex;
+//  text-align: justify;
+//}
+//
+//
+//.skillItems {
+//  //border: 1px solid red;
+//  border: 1px dashed red;
+//  width: 45%;
+//  margin-left: 5vw;
+//  text-align: center;
+//}
+//
+//.skillItems p {
+//  font-weight: bold;
+//}
+//
+//.skillItems img {
+//  max-height: 20%;
+//  max-width: 20%;
+//  display: block;
+//}
+//
+//@media all and (max-width: 900px) {
+//  .skills {
+//    //border: 1px solid black;
+//    min-width: 70vw;
+//    position: relative;
+//    display: block;
+//  }
+//  .skills .container {
+//    position: relative;
+//    min-width:100%;
+//  }
+//
+//  .skills .container p {
+//    //border: 1px solid blue;
+//    width: 100%;
+//    min-width: 100%;
+//    position: relative;
+//  }
+//
+//  .skillItems {
+//    //border: 1px solid red;
+//    margin: auto;
+//    width: 100%;
+//    min-width: 100%;
+//  }
+//}
+
+//######################
+//  Start Header Section
+//######################
+
 header {
-  //border: 1px solid red;
   display: flex;
-  width: 70vw;
-  margin: auto;
-  margin-top: 10vh;
+  flex-direction: column;
+  margin-top: 8vh;
+  padding: 0 28px 15px;
 }
 
-header .presentationText {
-  //border: 1px solid green;
+.header-wrapper {
+  display: flex;
+}
+.presentationText {
+  width: 60%;
+  margin: auto;
+}
+
+.presentationText p{
+  font-size: 18px;
+  line-height: 24px;
+  //margin: auto;
+}
+
+.socialLinks {
+  display: flex;
+  padding: 15px 0;
+}
+
+.socialLinks img {
+  height: 32px;
+  width: 32px;
+  padding: 15px 15px 15px 0;
+}
+
+.header-image {
+  display: flex;
   width: 40%;
-  margin-bottom: 2vh;
+}
+.header-image img {
+  //position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
 }
 
-header .presentationImage {
-  position: relative;
-  width: 60%;
-  //border: 1px solid green;
+//######################
+//  Start Skills Section
+//######################
+
+#skills {
+  width: 90vw;
   margin: auto;
 }
 
-@media all and (max-width: 900px) {
-  header {
-    display: block;
-  }
-  header .presentationText {
-    //border: 1px solid green;
-    width: 100%;
-    height: auto;
-    display: flex;
-  }
+.section-header h2 {
+  font-size: 36px;
+  line-height: 42px;
+}
 
-  header .presentationImage {
-    position: relative;
-    width: 100%;
+.skills-logos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 16px;
+  grid-row-gap: 32px;
+  padding: 56px 0;
+  //width: 100%;
+  //border: 2px solid red;
+}
+
+.skills-logos-grid img {
+  max-height: 120px;
+  display: flex;
+  margin: auto;
+}
+
+@media all and (max-width: 767px) {
+  #skills .container {
+    padding: 0;
+  }
+  .skills-logos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-header h2 {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 476px) {
+  .skills-logos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .skills-logos-grid img {
+    max-height: 80px;
     display: flex;
-    height: auto;
     margin: auto;
   }
 }
 
-.presentationImage img {
-  display: flex;
-  width: 60%;
-  height: 100%;
-  margin: auto;
-}
-
-.skills {
-  //border: 1px solid black;
-  display: flex;
-  width: 70vw;
-  margin: 3vh auto;
-}
-
-.skills .container {
-  //border: 1px solid purple;
-  display: block;
-  width: 45%;
-  margin-left: 0;
-  margin-right: 5%;
-}
-
-.skills .container h3 {
-  //border: 1px solid red;
-  position: relative;
-  width: 50%;
-}
-
-.skills .container p {
-   //border: 1px solid green;
-  position: relative;
-  display: flex;
-  text-align: justify;
-}
-
-
-.skillItems {
-  //border: 1px solid red;
-  border: 1px dashed red;
-  width: 45%;
-  margin-left: 5vw;
-  text-align: center;
-}
-
-.skillItems p {
-  font-weight: bold;
-}
-
-.skillItems img {
-  max-height: 20%;
-  max-width: 20%;
-  display: block;
-}
-
-@media all and (max-width: 900px) {
-  .skills {
-    //border: 1px solid black;
-    min-width: 70vw;
-    position: relative;
-    display: block;
-  }
-  .skills .container {
-    position: relative;
-    min-width:100%;
-  }
-
-  .skills .container p {
-    //border: 1px solid blue;
-    width: 100%;
-    min-width: 100%;
-    position: relative;
-  }
-
-  .skillItems {
-    //border: 1px solid red;
-    margin: auto;
-    width: 100%;
-    min-width: 100%;
-  }
-}
-
-
-/*
-    start contact form
-*/
+//####################
+//  Start Contact Form
+//####################
 
 .container {
   //display: flex;
-  margin-top: 5vh;
+  margin-top: 6vh;
   max-width: 98vw;
-  padding: 0 32px;
+  padding: 0 28px;
 }
 
 .contact-grid {
@@ -148,7 +248,7 @@ header .presentationImage {
   display: grid;
   grid-template-columns: 1fr 0.25fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 16px;
+  grid-gap: 8px;
 }
 
 .contact-grid h3 {
@@ -228,3 +328,31 @@ header .presentationImage {
 //}
 
 
+@media all and (max-width: 767px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-grid h3 {
+    text-align: center;
+  }
+  .btn-contact-form {
+    width: 33%;
+  }
+}
+
+@media all and (max-width: 479px){
+  .container {
+    padding: 0 14px;
+  }
+  .text-form {
+    display: block;
+  }
+  .text-form input {
+    width: 100%;
+  }
+  .btn-contact-form {
+    width: 100%;
+  }
+}
